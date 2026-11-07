@@ -1,0 +1,49 @@
+{
+    "model_file": "edge_host_decision_tree.joblib",
+    "model_type": "DecisionTreeClassifier",
+    "pipeline_components": [
+        "SimpleImputer(strategy='median')",
+        "DecisionTreeClassifier"
+    ],
+    "feature_columns": [
+        "Avg_user_time",
+        "Std_user_time",
+        "Avg_nice_time",
+        "Std_nice_time",
+        "Avg_system_time",
+        "Std_system_time",
+        "Avg_iowait_time",
+        "Std_iowait_time",
+        "Avg_ideal_time",
+        "Std_ideal_time",
+        "Avg_tps",
+        "Std_tps",
+        "Avg_rtps",
+        "Std_rtps",
+        "Avg_wtps",
+        "Std_wtps",
+        "Avg_ldavg_1",
+        "Std_ldavg_1",
+        "Avg_kbmemused",
+        "Std_kbmemused",
+        "Avg_num_Proc/s",
+        "Std_num_proc/s",
+        "Avg_num_cswch/s",
+        "std_num_cswch/s",
+        "Login_attempt",
+        "Succesful_login",
+        "File_activity",
+        "Process_activity",
+        "read_write_physical.process",
+        "is_privileged"
+    ],
+    "n_features": 30,
+    "target": "class3",
+    "target_classes": [
+        "Attack",
+        "Normal"
+    ],
+    "chronological_cutoff": "2020-02-25 05:19:42",
+    "scikit_learn_version": "1.6.1",
+    "label_limitation": "Predicts X-IIoTID class3 using host-related features; not yet validated as a host-compromise detector."
+}

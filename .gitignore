@@ -1,0 +1,13 @@
+.venv/
+**/.venv/
+__pycache__/
+*.pyc
+archive/
+experiment_1/
+normal_test/
+system_monitoring/network_logs/live_captures/
+system_monitoring/network_logs/full_capture/**/*.pcap
+system_monitoring/network_logs/full_capture/**/*.log
+system_monitoring/network_logs/full_capture/**/*.csv
+edge_output.json
+host_features_live.csv
